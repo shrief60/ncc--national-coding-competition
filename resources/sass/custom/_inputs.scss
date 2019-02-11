@@ -1,0 +1,7 @@
+.form-control {
+    &, &:hover, &:active {
+        box-shadow: $form-control-box-shadow;
+        outline: $form-control-outline;
+        border-radius: $form-control-border-radius;
+    }
+}
