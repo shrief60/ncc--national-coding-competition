@@ -3,6 +3,7 @@
   padding: 0.5rem;
   position: relative;
   min-height: 60vh;
+  align-self: flex-start;
   display: grid;
   grid-template-rows: 140px 100px auto 100px;
 }
@@ -85,6 +86,6 @@ body {
   display: grid;
   width: 95%;
   margin: 1rem auto;
-  grid-template-columns: 200px auto;
+  grid-template-columns: 250px auto;
 }
 

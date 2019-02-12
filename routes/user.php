@@ -1,7 +1,6 @@
 <?php
 
 
-Route::view('/user', 'user.pages.home')->name('home');
 
 Route::get('profile/{user?}', 'ProfileController@show')->name('profile.show');
 Route::post('profile', 'ProfileController@update')->name('profile.update');

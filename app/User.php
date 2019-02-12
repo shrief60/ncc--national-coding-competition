@@ -48,12 +48,12 @@ class User extends Authenticatable
 
     public function ideas()
     {
-        return $this->belongsToMany(Idea::class, 'progress');
+        return $this->belongsToMany(Idea::class, 'progress')->as('progress')->withPivot('round_id', 'submission', 'published', 'finished', 'grade');
     }
 
     public function rounds()
     {
-        return $this->belongsToMany(Round::class, 'progress');
+        return $this->belongsToMany(Round::class, 'progress')->as('progress')->withPivot('idea_id', 'submission', 'published', 'finished', 'grade');
     }
 
     /*************************************************************************/
