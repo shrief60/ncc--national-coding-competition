@@ -61,7 +61,7 @@ class RouteServiceProvider extends ServiceProvider
         Route::middleware(['web', 'admin', 'auth:admin'])
             ->name('admin.')
             ->prefix('admin')
-            ->namespace("$this->namespace/Admin")
+            ->namespace("$this->namespace\Admin")
             ->group(base_path('routes/admin.php'));
     }
 
@@ -77,7 +77,7 @@ class RouteServiceProvider extends ServiceProvider
         Route::middleware(['web', 'judge', 'auth:judge'])
             ->name('judge.')
             ->prefix('judge')
-            ->namespace("$this->namespace/Judge")
+            ->namespace("$this->namespace\Judge")
             ->group(base_path('routes/judge.php'));
     }
 
@@ -91,9 +91,7 @@ class RouteServiceProvider extends ServiceProvider
     protected function mapUserRoutes()
     {
         Route::middleware(['web', 'auth'])
-            ->name('user.')
-            ->prefix('user')
-            ->namespace("$this->namespace/User")
+            ->namespace("$this->namespace\User")
             ->group(base_path('routes/user.php'));
     }
 
