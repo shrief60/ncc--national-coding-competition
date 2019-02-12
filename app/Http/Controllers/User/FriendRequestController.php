@@ -13,13 +13,13 @@ class FriendRequestController extends Controller
     /**
      * Store New FriendRequest
      *
-     * @param App\User $learner
+     * @param App\User $user
      * @return JSON
      */
     public function store(User $user)
     {
         auth()->user()->sentRequests()->create([
-            'receiver_id' => $learner->id,
+            'receiver_id' => $user->id,
         ]);
 
         return back();

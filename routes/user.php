@@ -1,5 +1,16 @@
 <?php
 
+
+Route::view('/user', 'user.pages.home')->name('home');
+
+Route::get('profile/{user?}', 'ProfileController@show')->name('profile.show');
+Route::post('profile', 'ProfileController@update')->name('profile.update');
+
+Route::get('/rounds', 'RoundController@index')->name('rounds.index');
+Route::get('/friends', 'FriendController@index')->name('friends.index');
+Route::get('/community', 'CommunityController@index')->name('community.index');
+
+
 Route::get('/posts', 'PostsController@index');
 Route::post('/posts' , 'PostsController@store');
 Route::get('/posts/create' , 'PostsController@showNewPost');
@@ -23,7 +34,5 @@ Route::put('/replys/update'       , 'ReplysController@update');
 Route::get('/categories' , 'CategoriesController@show');
 Route::post('/categories', 'CategoriesController@store');
 
-// rounds
 Route::get('/rounds/idea' , 'RoundsController@indexToIdea');
 Route::get('/rounds/round' , 'RoundsController@index');
-

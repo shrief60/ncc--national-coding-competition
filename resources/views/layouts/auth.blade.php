@@ -15,6 +15,7 @@
     <title> {{ config('app.name') }} </title>
 
     {!! css('app') !!}
+
     {!! css('auth/auth') !!}
 
     @stack('css')
@@ -68,11 +69,11 @@
                     <div class="lang-switcher">
                         <img src="{{ icon('earth-globe', 'svg') }}" class="svg">
                         @rtl
-                        <a href="{{ route('lang.switch', 'en') }}">
+                        <a href="{{ route('locale.switch', 'en') }}">
                             <span> English </span>
                         </a>
                         @else
-                        <a href="{{ route('lang.switch', 'ar') }}">
+                        <a href="{{ route('locale.switch', 'ar') }}">
                             <span> عربى </span>
                         </a>
                         @endrtl

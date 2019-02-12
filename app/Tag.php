@@ -6,7 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tag extends Model
 {
-    public function posts(){
+
+    /**
+     * The attributes that are guarded.
+     *
+     * @var array
+     */
+    protected $guarded = [];
+
+    public function posts()
+    {
         return $this->belongsToMany(Post::class);
     }
 

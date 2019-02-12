@@ -5,7 +5,7 @@ Route::namespace ('User')
     ->group(function () {
         Route::get('/login', 'LoginController@showLoginForm')->name('login');
         Route::post('/login', 'LoginController@login');
-        Route::post('/logout', 'LoginController@logout')->name('logout');
+        Route::any('/logout', 'LoginController@logout')->name('logout');
 
         Route::get('/register', 'RegisterController@showRegistrationForm')->name('register');
         Route::post('/register', 'RegisterController@register');
@@ -22,7 +22,7 @@ Route::prefix('admin')
     ->group(function () {
         Route::get('/login', 'LoginController@showLoginForm')->name('login');
         Route::post('/login', 'LoginController@login');
-        Route::post('/logout', 'LoginController@logout')->name('logout');
+        Route::any('/logout', 'LoginController@logout')->name('logout');
 
         Route::get('/register', 'RegisterController@showRegistrationForm')->name('register');
         Route::post('/register', 'RegisterController@register');
@@ -39,7 +39,7 @@ Route::prefix('Judge')
     ->group(function () {
         Route::get('/login', 'LoginController@showLoginForm')->name('login');
         Route::post('/login', 'LoginController@login');
-        Route::post('/logout', 'LoginController@logout')->name('logout');
+        Route::any('/logout', 'LoginController@logout')->name('logout');
 
         Route::get('/register', 'RegisterController@showRegistrationForm')->name('register');
         Route::post('/register', 'RegisterController@register');

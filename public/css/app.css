@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Cairo|Titillium+Web|Imprima);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Cairo|Titillium+Web);@charset "UTF-8";
 
 /*!
  * animate.css -http://daneden.me/animate
@@ -21971,12 +21971,26 @@ readers do not read off random characters that represent icons */
   height: 25px;
 }
 
-.form-control,
-.form-control:hover,
-.form-control:active {
-  box-shadow: none;
-  outline: none;
-  border-radius: 0px;
+body {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  direction: ltr;
+}
+
+body.en,
+body .en {
+  font-family: "Titillium Web";
+}
+
+body.ar,
+body .ar {
+  font-family: "Cairo";
+}
+
+.form-control {
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 0px !important;
 }
 
 img.svg {
@@ -21986,5 +22000,31 @@ img.svg {
 img:not(.svg) {
   max-width: 100%;
   height: auto;
+}
+
+.btn-icon {
+  background: transparent;
+  padding: 0.5rem;
+}
+
+.btn {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.pointer {
+  cursor: pointer;
 }
 

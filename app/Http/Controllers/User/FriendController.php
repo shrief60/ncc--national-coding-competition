@@ -17,7 +17,7 @@ class FriendController extends Controller
 
         $user->load('friends', 'sentRequests.receiver', 'receivedRequests.sender');
 
-        return view('teacher.friends', compact('user'));
+        return view('user.friends.index', compact('user'));
     }
 
     public function store(User $user)
