@@ -35,3 +35,5 @@ Route::post('/categories', 'CategoriesController@store');
 
 Route::get('/rounds/idea' , 'RoundsController@indexToIdea');
 Route::get('/rounds/round' , 'RoundsController@index');
+Route::get('/rounds/idea2' , 'RoundsController@indexToIdea2');
+
