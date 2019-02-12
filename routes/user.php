@@ -22,3 +22,8 @@ Route::put('/replys/update'       , 'ReplysController@update');
 
 Route::get('/categories' , 'CategoriesController@show');
 Route::post('/categories', 'CategoriesController@store');
+
+// rounds
+Route::get('/rounds/idea' , 'RoundsController@indexToIdea');
+Route::get('/rounds/round' , 'RoundsController@index');
+
