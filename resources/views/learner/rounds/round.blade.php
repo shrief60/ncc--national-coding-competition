@@ -44,12 +44,24 @@
             @yield('content')
         </main>
     </div>
-    <div class = "progressbar ">
+    <div class = "progressbar">
         <div class="bar"></div>
         <img class = "start_icon_progress" src = "{{ asset('svg/rightcheck.svg') }}" alt="">
-        <div class = "circle shadow"></div>
-        <div class = "circle2 shadow"></div>
-        <div class = "circle3 shadow"></div>
+        <div class = "circle shadow">
+            <img  class = "icon_lock" src="{{ asset('svg/padlock-unlock.svg') }}" alt="" sizes="" >
+            <p class = "progress_round"> Round </p>
+            <p class = "progress_round_num"> #1 </p>
+        </div>
+        <div class = "circle2 shadow">
+             <img class = "icon_lock" src="{{ asset('svg/padlock.svg') }}" alt="" sizes="" >
+             <p class = "progress_round"> Round </p>
+            <p class = "progress_round_num"> #2 </p>
+        </div>
+        <div class = "circle3 shadow">
+             <img  class = "icon_lock" src="{{ asset('svg/padlock.svg') }}" alt="" sizes="" >
+             <p class = "progress_round"> Round </p>
+            <p class = "progress_round_num"> #3 </p>
+        </div>
         <div class = "circle_end shadow"></div>
 
     </div>
@@ -124,6 +136,9 @@
             </div>
 
         </div>
+        <center>
+             <button class = "nextStep">NEXT STEP ></button>
+        </center>
 
     </div>
 

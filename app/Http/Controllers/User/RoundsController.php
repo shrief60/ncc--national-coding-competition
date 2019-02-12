@@ -14,4 +14,7 @@ class RoundsController extends Controller
     public function indexToIdea(){
         return view ('learner.rounds.idea');
     }
+     public function indexToIdea2(){
+        return view ('learner.rounds.idea2');
+    }
 }

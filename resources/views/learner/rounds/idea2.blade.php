@@ -58,15 +58,21 @@
                 </div>
 
             </div>
-
-            <div class = "op_card">
-                <img CLASS = "image_card" src="https://previews.123rf.com/images/baz777/baz7771108/baz777110800013/10403555-cartoon-computer-being-scared-by-the-mouse-isolated-on-white-background.jpg" alt="" >
-                <p class = "black_section"> WRITE YOUR CODE <span class = "blue_section"> > </span> </p>
+            <div class = "container_divs">
+                        <div class = "op_card">
+                        <img CLASS = "image_card" src="https://previews.123rf.com/images/baz777/baz7771108/baz777110800013/10403555-cartoon-computer-being-scared-by-the-mouse-isolated-on-white-background.jpg" alt="" >
+                        <p class = "black_section"> WRITE YOUR CODE <span class = "blue_section"> > </span> </p>
+                    </div>
+                    <div class = "op_card">
+                        <img CLASS = "image_card" src="https://previews.123rf.com/images/baz777/baz7771108/baz777110800013/10403555-cartoon-computer-being-scared-by-the-mouse-isolated-on-white-background.jpg" alt="" >
+                        <p class = "black_section">UPLOAD FILES <span class = "blue_section"> > </span> </p>
+                    </div>
             </div>
 
         </div>
-        <button class = "nextStep absolute_button">FINISH ROUND ></button>
+          <button class = "nextStep absolute_button">FINISH ROUND ></button>
     </div>
+
 
     <script src="/js/app.js"></script>
     <script src="/js/ajax.js"></script>
