@@ -24,6 +24,7 @@ class CreateProgressTable extends Migration
             $table->integer('grade')->unsigned()->default(0);
             $table->boolean('published')->default(false);
             $table->text('submission')->nullable();
+            $table->boolean('finished')->default(false);
             $table->timestamps();
         });
     }

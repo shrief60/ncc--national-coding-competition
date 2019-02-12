@@ -7,7 +7,6 @@
 }
 
 .round1 {
-
     display: grid;
     grid-template-columns: 70% 20%;
     grid-gap: 10%
@@ -68,8 +67,7 @@
     border: 2px solid rgb(232, 232, 232);
     border-radius: 15px;
     padding: 3%;
-    margin: 5%;
-
+    margin: 2%;
 }
 
 .margin-bottom {
@@ -128,13 +126,14 @@
 /*** bar  */
 
 .bar {
-    width: 80%;
+    width: 95%;
     height: 20px;
     background-color: rgb(208, 208, 208);
     text-align: center;
     /* margin-top: 10%; */
-    margin-left: 50px;
+    /* margin-left: 50px; */
     border-radius: 20px;
+    margin: auto;
 }
 
 .start_icon_progress {
@@ -142,7 +141,7 @@
     height: 50px;
     position: absolute;
     top: 50%;
-    left: 9.5%;
+    left: 2%;
     transform: translateY(-50%);
 }
 
@@ -152,43 +151,53 @@
     justify-content: center;
     align-items: center;
     height: 200px;
-    margin-top: 70px;
+    /* margin-top: 70px; */
 }
 
-.circle {
+.circle.started {
+    border: 3px solid #7259ff;
+}
+
+.circle.finished {
+    border: 3px solid #5DBF61;
+}
+
+.circle.closed {
+    border: 1px solid rgb(166, 166, 166);
+}
+
+
+.circle1 {
     width: 125px;
     height: 125px;
     position: absolute;
     left: 0px;
     background-color: #fff;
     border-radius: 50%;
-    left: 25%;
-    border: 5px solid #7259ff;
+    left: 15%;
 }
+
 
 .circle2 {
     width: 125px;
     height: 125px;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     background-color: #fff;
     border-radius: 50%;
     transform: translateY(-50%);
-    border: 3px solid rgb(166, 166, 166);
 }
 
 .circle3 {
     width: 125px;
     height: 125px;
     position: absolute;
-
-    left: 75%;
+    left: 65%;
     top: 50%;
     background-color: #fff;
     border-radius: 50%;
     transform: translateY(-50%);
-    border: 3px solid rgb(166, 166, 166);
 }
 
 .circle_end {
@@ -199,7 +208,7 @@
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
-    left: 90%;
+    right: 2%;
     border: 3px solid rgb(166, 166, 166);
 }
 
@@ -245,22 +254,22 @@
 
 .nextStep {
     background-color: #7258ff;
-    color:#ffff ;
-    font-size : 20px;
-    padding : 1% 3% ;
-    border : none;
-
-    text-align : center ;
-
-    border : none;
+    color: #ffff;
+    font-size: 20px;
+    padding: 1% 3%;
+    border: none;
+    text-align: center;
+    border: none;
     border-radius: 10px;
-
-
-
 }
-.absolute_button{
-    position: absolute ;
-       right: 65px;
-       bottom: -80px;
+
+.nextStep:hover {
+    color: #ddd;
+}
+
+.absolute_button {
+    position: absolute;
+    right: 65px;
+    bottom: -80px;
 
 }

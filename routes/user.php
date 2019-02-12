@@ -1,7 +1,6 @@
 <?php
 
 
-Route::view('/user', 'user.pages.home')->name('home');
 
 Route::get('profile/{user?}', 'ProfileController@show')->name('profile.show');
 Route::post('profile', 'ProfileController@update')->name('profile.update');
@@ -36,3 +35,5 @@ Route::post('/categories', 'CategoriesController@store');
 
 Route::get('/rounds/idea' , 'RoundsController@indexToIdea');
 Route::get('/rounds/round' , 'RoundsController@index');
+Route::get('/rounds/idea2' , 'RoundsController@indexToIdea2');
+

@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Model;
 
 class Idea extends Model
@@ -13,7 +14,7 @@ class Idea extends Model
     /*************************************************************************/
     public function users()
     {
-        return $this->belongsToMany(User::class, 'progress');
+        return $this->belongsToMany(User::class, 'progress')->as('progress')->withPivot('round_id', 'submission', 'published', 'finished', 'grade');
     }
 
     public function round()
@@ -24,5 +25,13 @@ class Idea extends Model
     public function attachments()
     {
         return $this->morphMany(Attachment::class, 'attachable');
+    }
+
+
+    public function isFinished(User $user = null)
+    {
+        $user = $user ?? Auth::user();
+
+        return Progress::isIdeaFinished($user->id, $this->id);
     }
 }

@@ -40,4 +40,27 @@ class Progress extends Model
         return $this->morphMany(Attachment::class, 'attachable');
     }
 
+
+
+    /*************************************************************************/
+    /*                              Methods                                  */
+    /*************************************************************************/
+    public static function isIdeaFinished($userId, $ideaId)
+    {
+        return self::where([
+            'user_id' => $userId,
+            'idea_id' => $ideaId,
+            'finished' => true,
+        ])->exists();
+    }
+
+    public static function isRoundFinished($userId, $roundId)
+    {
+        return self::where([
+            'user_id' => $userId,
+            'round_id' => $roundId,
+            'finished' => true,
+        ])->exists();
+    }
+
 }
