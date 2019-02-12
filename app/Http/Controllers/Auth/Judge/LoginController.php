@@ -60,4 +60,21 @@ class LoginController extends Controller
     {
         return Auth::guard('judge');
     }
+
+
+    /**
+     * Get the login username to be used by the controller.
+     *
+     * @return string
+     */
+    public function username()
+    {
+        $username = request()->input('username');
+
+        $field = filter_var($username, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
+
+        request()->merge([$field => $username]);
+
+        return $field;
+    }
 }

@@ -18,7 +18,7 @@ class RedirectIfJudge
 	public function handle($request, Closure $next, $guard = 'judge')
 	{
 	    if (Auth::guard($guard)->check()) {
-	        return redirect('judge/home');
+	        return redirect('judge');
 	    }
 
 	    return $next($request);
