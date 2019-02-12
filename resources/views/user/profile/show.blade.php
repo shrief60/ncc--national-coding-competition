@@ -1,4 +1,4 @@
-@extends('layouts.user')
+@extends('layouts.main')
 
 @section('content')
 
@@ -10,7 +10,7 @@
         <div class="basic-info">
             <div class="profile">
                 @if($user->id == auth()->id())
-                <form action="{{ route('profile.update') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('user.profile.update') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <label for="avatar"> <img src="{{ icon('pen', 'svg') }}" class="svg" /> </label>
                     <input type="file" name="avatar" id="avatar" accept="image/*">
@@ -39,7 +39,7 @@
                 @include('user.profile.edit-icon', ['name' => 'birthday'])
                 @if($user->id == auth()->id())
                 <div class="editing" data-editable="birthday">
-                    <form method="POST" action="{{ route('profile.update') }}">
+                    <form method="POST" action="{{ route('user.profile.update') }}">
                         <input type="date" class="form-control edit-input" name="date_of_birth" value="{{ $user->date_of_birth }}" placeholder="@lang('profile.placeholder.birthday')">
                         <img src="{{ icon('save', 'svg') }}" alt="" class="svg save">
                         <img src="{{ icon('close', 'svg') }}" alt="" class="svg cancel">
@@ -68,6 +68,6 @@
 @endpush
 
 
-@push('scripts')
+@push('js')
     {!! js('user/pages/profile') !!}
 @endpush

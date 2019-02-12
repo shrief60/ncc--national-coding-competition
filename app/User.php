@@ -13,7 +13,7 @@ class User extends Authenticatable
     const DEFAULT_AVATAR_PATH = "images/defaults/avatar.png";
 
     /**
-     * The attributes that are mass guarded.
+     * The attributes that are guarded.
      *
      * @var array
      */
@@ -28,6 +28,9 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    /*************************************************************************/
+    /*                              Relations                                */
+    /*************************************************************************/
     public function friends()
     {
         return $this->belongsToMany(User::class, 'friends', 'user_id');
@@ -43,14 +46,26 @@ class User extends Authenticatable
         return $this->hasMany(FriendRequest::class, 'receiver_id');
     }
 
+    public function ideas()
+    {
+        return $this->belongsToMany(Idea::class, 'progress');
+    }
+
+    public function rounds()
+    {
+        return $this->belongsToMany(Round::class, 'progress');
+    }
+
+    /*************************************************************************/
+    /*                              Accessors                                */
+    /*************************************************************************/
     public function getAvatarAttribute($avatar)
     {
-
         return $avatar ? asset("storage/{$avatar}") : asset(self::DEFAULT_AVATAR_PATH) ;
     }
 
     public function getLocationAttribute()
     {
-        return "$this->moderya - $this->edara";
+        return "$this->country - $this->city";
     }
 }

@@ -8,8 +8,12 @@ $form-control-border-radius: 0px;
 $form-control-box-shadow: none;
 $form-control-outline: none;
 
+$btn-icon-padding: 0.5rem;
+
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
+
+$alert-danger: #FFCFCF;
 
 // Colors
 $blue: #3490dc;
@@ -22,6 +26,11 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+$white: #fff;
+$black: #000;
+$grey: #aaa;
+$light-grey: #ddd;
+$dark-grey: #555;
 
 
 $xs: 400px;

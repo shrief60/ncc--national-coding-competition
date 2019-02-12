@@ -16,7 +16,7 @@
                         @include('user.profile.edit-icon', ['name' => 'gender'])
                     </div>
                     <div class="editing" data-editable="gender">
-                        <form method="POST" class="gender" action="{{ route('profile.update') }}">
+                        <form method="POST" class="gender" action="{{ route('user.profile.update') }}">
                             <div>
                                 <div class="pretty p-jelly p-image p-plain">
                                     <input type="radio" name="gender" value="Male" />
@@ -49,7 +49,7 @@
                         </div>
                         <div class="right"></div>
                     </div>
-                    <form action="{{ route('profile.update') }}" method="POST" class="mx-4 pt-2 pb-4">
+                    <form action="{{ route('user.profile.update') }}" method="POST" class="mx-4 pt-2 pb-4">
                         @csrf
                         <div class="form-group">
                             <input type="password" class="form-control input__outline__primary" name="password"

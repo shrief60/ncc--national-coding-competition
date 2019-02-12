@@ -22002,3 +22002,29 @@ img:not(.svg) {
   height: auto;
 }
 
+.btn-icon {
+  background: transparent;
+  padding: 0.5rem;
+}
+
+.btn {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.pointer {
+  cursor: pointer;
+}
+

@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class Progress extends Model
 {
 
     /**
@@ -14,12 +14,30 @@ class Category extends Model
      */
     protected $guarded = [];
 
+    /**
+     * The model table name
+     *
+     * @var string
+     */
+    protected $table = 'progress';
+
+
     /*************************************************************************/
     /*                              Relations                                */
     /*************************************************************************/
-    public function posts()
+    public function user()
     {
-        return $this->hasMany(Post::class);
+        return $this->belongsTo(User::class);
+    }
+
+    public function round()
+    {
+        return $this->belongsTo(Round::class);
+    }
+
+    public function attachments()
+    {
+        return $this->morphMany(Attachment::class, 'attachable');
     }
 
 }

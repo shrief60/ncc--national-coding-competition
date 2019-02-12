@@ -22,11 +22,11 @@
 
 <body class="{{ locale() }}">
 
-    @yield('content')
+    @yield('layout')
 
     {!! js('app') !!}
 
-    @stack('scripts')
+    @stack('js')
 
 </body>
 

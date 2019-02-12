@@ -12,9 +12,19 @@ class Comment extends Model implements LikeableContract
 
     use Likeable;
 
+    /**
+     * The attributes that are guarded.
+     *
+     * @var array
+     */
     protected $guarded = [];
 
-    protected $appends = ['routes', 'is_liked'];
+    /**
+     * The attributes that should be appended.
+     *
+     * @var array
+     */
+    protected $appends = ['is_liked'];
 
     /*************************************************************************/
     /*                              Relations                                */

@@ -1,0 +1,10 @@
+@import '../variables';
+
+@import 'partials/sidebar';
+
+body {
+    display: grid;
+    width: 95%;
+    margin: 1rem auto;
+    grid-template-columns: 200px auto;
+}

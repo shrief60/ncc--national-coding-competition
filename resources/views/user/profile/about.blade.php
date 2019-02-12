@@ -80,7 +80,7 @@
                 </div>
                 @if($user->id == auth()->id())
                 <div class="editing" data-editable="bio">
-                    <form method="POST" class="bio-form" action="{{ route('profile.update') }}">
+                    <form method="POST" class="bio-form" action="{{ route('user.profile.update') }}">
                         <textarea placeholder="@lang('profile.about.bio.bio')" rows="13" class="form-control" name="bio">{{ $user->bio }}</textarea>
                         <button type="submit" class="btn save"> <img src="{{ icon('save', 'svg') }}" alt="" class="svg"> </button>
                         <button type="button" class="btn cancel"> <img src="{{ icon('close', 'svg') }}" alt="" class="svg"> </button>
@@ -133,7 +133,7 @@
                     </div>
                     @if($user->id == auth()->id())
                     <div class="editing" data-editable="location">
-                        <form method="POST" class="location" action="{{ route('profile.update') }}">
+                        <form method="POST" class="location" action="{{ route('user.profile.update') }}">
                             <div>
                                 <input type="text" class="form-control edit-input" name="country" value="{{ $user->country }}" placeholder="@lang('profile.placeholder.country')">
                                 <input type="text" class="form-control edit-input" name="city" value="{{ $user->city }}" placeholder="@lang('profile.placeholder.city')">

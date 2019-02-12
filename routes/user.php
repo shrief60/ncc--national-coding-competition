@@ -1,8 +1,14 @@
 <?php
 
 
-Route::get('/profile/{user?}', 'ProfileController@show')->name('profile.show');
+Route::view('/user', 'user.pages.home')->name('home');
+
+Route::get('profile/{user?}', 'ProfileController@show')->name('profile.show');
 Route::post('profile', 'ProfileController@update')->name('profile.update');
+
+Route::get('/rounds', 'RoundController@index')->name('rounds.index');
+Route::get('/friends', 'FriendController@index')->name('friends.index');
+Route::get('/community', 'CommunityController@index')->name('community.index');
 
 
 Route::get('/posts', 'PostsController@index');

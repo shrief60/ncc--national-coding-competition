@@ -66,7 +66,7 @@
         window.location = `/posts/index/${id}`;
     }
 </script>
-@push('scripts')
+@push('js')
     <script src="https://cdn.plyr.io/3.4.7/plyr.polyfilled.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.32.2/dist/sweetalert2.all.min.js"></script>

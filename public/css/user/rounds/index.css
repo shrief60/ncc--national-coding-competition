@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Cairo|Titillium+Web);.round-date .round-time-diff {
+  border: 1px solid #aaa;
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  color: #aaa;
+}
+
+.round-date .round-time-diff svg {
+  fill: #000;
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+}
+
+.round-date .round-due-date {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0.5rem auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  background: #FFCFCF;
+  border-radius: 0.5rem;
+}
+
+.round-date .round-due-date .text {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+  margin: 0;
+  color: #555;
+}
+
+.round-date .round-due-date .icon {
+  background: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  text-align: center;
+}
+

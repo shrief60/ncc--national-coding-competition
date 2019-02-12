@@ -4,22 +4,21 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class Round extends Model
 {
 
-    /**
-     * The attributes that are guarded.
-     *
-     * @var array
-     */
-    protected $guarded = [];
 
     /*************************************************************************/
     /*                              Relations                                */
     /*************************************************************************/
-    public function posts()
+    public function users()
     {
-        return $this->hasMany(Post::class);
+        return $this->belongsToMany(User::class, 'progress');
+    }
+
+    public function ideas()
+    {
+        return $this->hasMany(Idea::class);
     }
 
 }

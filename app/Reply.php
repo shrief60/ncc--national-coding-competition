@@ -12,8 +12,18 @@ class Reply extends Model Implements LikeableContract
 
     use Likeable;
 
+    /**
+     * The attributes that are guarded.
+     *
+     * @var array
+     */
     protected $guarded = [];
 
+    /**
+     * The attributes that should be appended.
+     *
+     * @var array
+     */
     protected $appends = ['is_liked'];
 
     public function user()

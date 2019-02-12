@@ -1,6 +1,6 @@
 @if($user->id == auth()->id())
 <div class="editing" data-editable="{{ $name }}">
-    <form method="POST" action="{{ route('profile.update') }}" >
+    <form method="POST" action="{{ route('user.profile.update') }}" >
         @php
         $value = isset($profile) ? $user->$name : $user->$name;
         @endphp
