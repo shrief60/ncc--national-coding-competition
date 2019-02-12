@@ -38,9 +38,8 @@ class Round extends Model
         return $this->started && strtotime($this->due_date) > strtotime(Carbon::now());
     }
 
-    public function isPassed()
+    public function isFinished()
     {
-
         return $this->started && strtotime($this->due_date) < strtotime(Carbon::now());
     }
 
@@ -51,8 +50,8 @@ class Round extends Model
             return 'closed';
         } else if ($this->isStarted()) {
             return 'started';
-        } elseif ($this->isPassed()) {
-            return 'passed';
+        } elseif ($this->isFinished()) {
+            return 'finished';
         }
     }
 

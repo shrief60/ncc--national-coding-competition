@@ -5,6 +5,8 @@
     <div class="circle circle{{ $loop->iteration }} shadow {{ $round->status }}">
         @if($round->isStarted())
         <img class="icon_lock" src="{{ asset('svg/padlock-unlock.svg') }}" alt="" sizes="">
+        @elseif($round->isFinished())
+        <img class="icon_lock" src="{{ asset('svg/rightcheck.svg') }}" alt="" sizes="">
         @else
         <img class="icon_lock" src="{{ asset('svg/padlock.svg') }}" alt="" sizes="">
         @endif

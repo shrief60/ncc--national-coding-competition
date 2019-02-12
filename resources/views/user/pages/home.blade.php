@@ -10,7 +10,7 @@
                 <img src="{{ icon('hourglass', 'svg') }}" alt="Hourglass" class="svg">
                 <div class="text">
                     <span class="text-uppercase"> {{ $round->name }} closing at</span>
-                    <span class="text-black bold"> 18days:1hr:20min </span>
+                    <span class="text-black bold"> {{ Carbon\Carbon::now()->diffForHumans($round->due_date) }} </span>
                 </div>
             </div>
             <div class="round-due-date">

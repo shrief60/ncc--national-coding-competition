@@ -155,15 +155,15 @@
 }
 
 .circle.started {
-    border: 5px solid #7259ff;
+    border: 3px solid #7259ff;
 }
 
 .circle.finished {
-    border: 5px solid #7259ff;
+    border: 3px solid #5DBF61;
 }
 
 .circle.closed {
-    border: 5px solid rgb(166, 166, 166);
+    border: 1px solid rgb(166, 166, 166);
 }
 
 
