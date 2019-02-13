@@ -38,11 +38,6 @@ class Progress extends Model
         return $this->belongsTo(Round::class);
     }
 
-    public function idea()
-    {
-        return $this->belongsTo(Idea::class);
-    }
-
     public function attachments()
     {
         return $this->morphMany(Attachment::class, 'attachable');
