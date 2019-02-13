@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/judge';
+    protected $redirectTo = 'judge/progress/index';
 
     /**
      * Create a new controller instance.
@@ -65,6 +65,7 @@ class RegisterController extends Controller
     {
         return Judge::create([
             'name' => $data['name'],
+            'username' => $data['username'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);

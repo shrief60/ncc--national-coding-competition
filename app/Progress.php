@@ -29,7 +29,10 @@ class Progress extends Model
     {
         return $this->belongsTo(User::class);
     }
-
+    public function idea()
+    {
+        return $this->belongsTo(Idea::class);
+    }
     public function round()
     {
         return $this->belongsTo(Round::class);

@@ -29,7 +29,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    public $redirectTo = '/judge';
+    public $redirectTo = 'judge/progress/index';
 
     /**
      * Create a new controller instance.
@@ -70,11 +70,9 @@ class LoginController extends Controller
     public function username()
     {
         $username = request()->input('username');
-
         $field = filter_var($username, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
-
         request()->merge([$field => $username]);
-
         return $field;
     }
+
 }

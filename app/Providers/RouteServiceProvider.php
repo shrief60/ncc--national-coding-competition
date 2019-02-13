@@ -58,7 +58,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapAdminRoutes()
     {
-        Route::middleware(['web', 'admin', 'auth:admin', 'admin.guest'])
+        Route::middleware(['web', 'admin', 'auth:admin'])
             ->name('admin.')
             ->prefix('admin')
             ->namespace("$this->namespace\Admin")
@@ -74,7 +74,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapJudgeRoutes()
     {
-        Route::middleware(['web', 'judge', 'auth:judge', 'judge.guest'])
+        Route::middleware(['web', 'judge', 'auth:judge'])
             ->name('judge.')
             ->prefix('judge')
             ->namespace("$this->namespace\Judge")
@@ -138,4 +138,5 @@ class RouteServiceProvider extends ServiceProvider
              ->namespace("$this->namespace\Auth")
              ->group(base_path('routes/auth.php'));
     }
+
 }
