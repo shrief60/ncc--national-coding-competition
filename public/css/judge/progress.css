@@ -1,0 +1,44 @@
+.progess {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.progress_body {
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.progress_header {
+    background-color: #1bcae6;
+    color: white;
+    padding: 1%;
+}
+
+.submissions {
+    padding: 3%;
+    border: 0.5px solid #aaa;
+    margin-left: 10px;
+}
+
+.submissions_word {
+    color: #1bcae6;
+}
+
+.orange {
+    background-color: #797979;
+    width: 80px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.orange:hover {
+    color : #aaa;
+}
+
+.c-width {
+    width: 100%;
+}
+.element{
+    display: grid ;
+    grid-template-columns: 1fr 1fr ;
+}

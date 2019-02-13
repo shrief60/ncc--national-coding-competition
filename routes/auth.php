@@ -33,7 +33,7 @@ Route::prefix('admin')
         Route::get('/password/reset/{token}', 'ResetPasswordController@showResetForm');
     });
 
-Route::prefix('Judge')
+Route::prefix('judge')
     ->namespace('Judge')
     ->name('judge.')
     ->group(function () {
