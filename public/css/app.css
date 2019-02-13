@@ -22028,3 +22028,11 @@ img:not(.svg) {
   cursor: pointer;
 }
 
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: block;
+}
+

@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
             UsersTableSeeder::class,
             RoundsTableSeeder::class,
             IdeasTableSeeder::class,
-            ProgressTableSeeder::class,
+            // ProgressTableSeeder::class,
         ]);
     }
 }

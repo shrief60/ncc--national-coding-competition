@@ -9,6 +9,9 @@ Route::get('/rounds', 'RoundController@index')->name('rounds.index');
 Route::get('/friends', 'FriendController@index')->name('friends.index');
 Route::get('/community', 'CommunityController@index')->name('community.index');
 
+Route::post('round/ideas/{idea}', 'IdeaController@store')->name('ideas.store');
+
+Route::post('attachments/{idea}', 'AttachmentController@store')->name('attachments.store');
 
 Route::get('/posts', 'PostsController@index');
 Route::post('/posts' , 'PostsController@store');
@@ -33,7 +36,4 @@ Route::put('/replys/update'       , 'ReplysController@update');
 Route::get('/categories' , 'CategoriesController@show');
 Route::post('/categories', 'CategoriesController@store');
 
-Route::get('/rounds/idea' , 'RoundsController@indexToIdea');
-Route::get('/rounds/round' , 'RoundsController@index');
-Route::get('/rounds/idea2' , 'RoundsController@indexToIdea2');
 

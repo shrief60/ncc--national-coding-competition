@@ -2,7 +2,7 @@
     border: 0.5px solid rgb(232, 232, 232);
     border-radius: 15px;
     padding: 3%;
-    margin: 5%;
+    margin: 2%;
 
 }
 
@@ -110,7 +110,6 @@
 }
 
 .image_round_select {
-    display: block;
     margin-top: 50%;
     margin-bottom: 50%;
     width: 105px;
