@@ -5,11 +5,11 @@ $secondary: #5e636f;
 $cardBg: #34353A;
 
 body {
-    background: $bodyBackground;
+    background: $white;
 
     .editing {
         margin-top: 0.5rem;
-        border-top: 2px solid $bodyBackground;
+        border-top: 2px solid $white;
         padding-top: 0.5rem;
         display: none;
 
@@ -182,7 +182,7 @@ body {
 
         >* {
             &:not(:first-child) {
-                border-top: 2px solid $bodyBackground;
+                border-top: 2px solid $white;
             }
 
             padding: 1rem 1rem;
@@ -415,7 +415,7 @@ body {
                         font-size: 1.4rem;
                     }
 
-                    border-bottom: 2px solid $bodyBackground;
+                    border-bottom: 2px solid $white;
                 }
 
                 &.basic {
@@ -666,7 +666,7 @@ body {
 }
 
 .select2-dropdown {
-    background: $bodyBackground;
+    background: $white;
     color: #ddd;
     border-color: $gold;
     .select2-results {

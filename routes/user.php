@@ -5,13 +5,21 @@
 Route::get('profile/{user?}', 'ProfileController@show')->name('profile.show');
 Route::post('profile', 'ProfileController@update')->name('profile.update');
 
-Route::get('/rounds', 'RoundController@index')->name('rounds.index');
-Route::get('/friends', 'FriendController@index')->name('friends.index');
 Route::get('/community', 'CommunityController@index')->name('community.index');
 
+Route::get('/rounds', 'RoundController@index')->name('rounds.index');
 Route::post('round/ideas/{idea}', 'IdeaController@store')->name('ideas.store');
-
 Route::post('attachments/{idea}', 'AttachmentController@store')->name('attachments.store');
+
+
+Route::get('/users/search', 'UserController@show')->name('users.search');
+
+Route::get('/friends', 'FriendController@index')->name('friends.index');
+Route::post('/friends/{user}', 'FriendController@store')->name('friends.store');
+Route::delete('/friends/{user}', 'FriendController@destroy')->name('friends.destroy');
+
+Route::delete('/friend-request/{friendRequest}', 'FriendRequestController@destroy')->name('friendRequest.destroy');
+Route::post('/friend-request/{user}', 'FriendRequestController@store')->name('friendRequest.store');
 
 Route::get('/posts', 'PostsController@index');
 Route::post('/posts' , 'PostsController@store');

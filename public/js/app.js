@@ -6308,7 +6308,7 @@ module.exports = {
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/flatpickr/dist/themes/dark.css":
 /*!*************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--8-1!./node_modules/postcss-loader/src??ref--8-2!./node_modules/flatpickr/dist/themes/dark.css ***!
+  !*** ./node_modules/css-loader??ref--9-1!./node_modules/postcss-loader/src??ref--9-2!./node_modules/flatpickr/dist/themes/dark.css ***!
   \*************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -8604,7 +8604,7 @@ function toComment(sourceMap) {
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../css-loader??ref--8-1!../../../postcss-loader/src??ref--8-2!./dark.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/flatpickr/dist/themes/dark.css");
+var content = __webpack_require__(/*! !../../../css-loader??ref--9-1!../../../postcss-loader/src??ref--9-2!./dark.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/flatpickr/dist/themes/dark.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -23972,6 +23972,17 @@ toastr.options = {
 
 /***/ }),
 
+/***/ "./resources/sass/user/pages/friends.less":
+/*!************************************************!*\
+  !*** ./resources/sass/user/pages/friends.less ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/user/rounds/index.scss":
 /*!***********************************************!*\
   !*** ./resources/sass/user/rounds/index.scss ***!
@@ -23984,13 +23995,14 @@ toastr.options = {
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/user/main.scss ./resources/sass/user/rounds/index.scss ***!
-  \*************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/user/pages/friends.less ./resources/sass/app.scss ./resources/sass/user/main.scss ./resources/sass/user/rounds/index.scss ***!
+  \******************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /var/www/html/competition-ncc/resources/js/app.js */"./resources/js/app.js");
+__webpack_require__(/*! /var/www/html/competition-ncc/resources/sass/user/pages/friends.less */"./resources/sass/user/pages/friends.less");
 __webpack_require__(/*! /var/www/html/competition-ncc/resources/sass/app.scss */"./resources/sass/app.scss");
 __webpack_require__(/*! /var/www/html/competition-ncc/resources/sass/user/main.scss */"./resources/sass/user/main.scss");
 module.exports = __webpack_require__(/*! /var/www/html/competition-ncc/resources/sass/user/rounds/index.scss */"./resources/sass/user/rounds/index.scss");

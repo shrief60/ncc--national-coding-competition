@@ -2,5 +2,8 @@
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/css/user/main.css": "/css/user/main.css",
-    "/css/user/rounds/index.css": "/css/user/rounds/index.css"
+    "/css/user/rounds/index.css": "/css/user/rounds/index.css",
+    "/js/user/pages/friends.js": "/js/user/pages/friends.js",
+    "/js/user/pages/profile.js": "/js/user/pages/profile.js",
+    "/css/user/pages/friends.css": "/css/user/pages/friends.css"
 }

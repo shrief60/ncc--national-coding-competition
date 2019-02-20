@@ -33,7 +33,7 @@ class User extends Authenticatable
     /*************************************************************************/
     public function friends()
     {
-        return $this->belongsToMany(User::class, 'friends', 'user_id');
+        return $this->belongsToMany(User::class, 'friends', 'friend_id');
     }
 
     public function sentRequests()
