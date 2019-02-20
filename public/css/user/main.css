@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Cairo|Titillium+Web);.sidebar {
+  border: 2px solid #aaa;
+  padding: 0.5rem;
+  position: relative;
+  min-height: 60vh;
+  align-self: flex-start;
+  display: grid;
+  grid-template-rows: 140px 100px auto 100px;
+}
+
+.sidebar * {
+  color: #aaa;
+}
+
+.sidebar .notification-btn {
+  position: absolute;
+}
+
+.sidebar .notification-btn svg {
+  fill: #aaa;
+  width: 24px;
+  height: 24px;
+}
+
+.sidebar .avatar {
+  height: 100px;
+  width: 100px;
+  margin: 1rem auto;
+}
+
+.sidebar .avatar div {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.sidebar .info {
+  text-align: center;
+}
+
+.sidebar .info * {
+  margin-bottom: 0.25rem;
+}
+
+.sidebar .links {
+  padding: 0;
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sidebar .links li {
+  margin: 0.5rem;
+}
+
+.sidebar .links li .btn {
+  border: 1px solid #aaa;
+  border-radius: 0;
+  width: 100%;
+  display: block;
+}
+
+.sidebar .footer {
+  align-self: end;
+  padding: 0;
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sidebar .footer li a {
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  padding: 0;
+  text-align: left;
+}
+
+.sidebar .footer li a:hover {
+  color: #000;
+}
+
+body {
+  display: grid;
+  width: 95%;
+  margin: 1rem auto;
+  grid-template-columns: 250px auto;
+}
+

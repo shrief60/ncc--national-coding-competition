@@ -1,0 +1,11 @@
+body {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    direction: ltr;
+    &.en, .en {
+        font-family: $en-font-family;
+    }
+    &.ar, .ar {
+        font-family: $ar-font-family;
+    }
+}

@@ -43,7 +43,9 @@ window.toastr = require('toastr');
 window.Swal = require('sweetalert');
 window.Mustache = require('mustache');
 window.autosize = require('autosize');
-
+window.flatpickr = require("flatpickr");
+// import flatpickr from "flatpickr";
+require("flatpickr/dist/themes/dark.css");
 
 toastr.options = {
     "closeButton": false,

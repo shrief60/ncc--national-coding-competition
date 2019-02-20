@@ -1,0 +1,83 @@
+.container {
+    display: grid;
+    grid-template-columns: 65% 30%;
+    grid-gap: 5%;
+}
+
+.activeRound {
+    padding: 3%;
+}
+
+.header {
+    padding: 1% 2%;
+    align-items: center;
+}
+
+.border {
+    border: 0.5px solid #0000;
+
+}
+
+.fontWord_h {
+    font-size: 18px;
+    /*font-family: 'Times New Roman', Times, serif;*/
+    letter-spacing: 0.25px;
+    font-weight: bold;
+}
+
+.fontword_el {
+    font-size: 14px;
+    /*font-family: 'Times New Roman', Times, serif;*/
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+.fontword_time_el {
+    font-size: 12px;
+    /*font-family: 'Times New Roman', Times, serif;*/
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+.green_color {
+    color: #25d45d;
+}
+
+.d_flex {
+    display: grid;
+    grid-template-columns: 80% 3% 17%;
+
+}
+
+.small_icon {
+    width: 10px;
+    height: 10px;
+}
+
+.d_flex_time {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2%;
+    justify-items: center;
+}
+
+.gray_c
+{
+    color :#8b8b8b ;
+}
+.remainingTime{
+    margin-top : 2%;
+}
+.margin_m{
+    margin-top: -20px;
+}
+
+.margin_p{
+    margin-top : 10px ;
+}
+.d_flex_active {
+   display: grid;
+   grid-template-columns: 80%  17%;
+   grid-gap: 3%;
+}
+.rounded_border{
+    border-radius: 10px;
+}

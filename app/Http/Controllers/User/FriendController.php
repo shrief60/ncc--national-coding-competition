@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers\User;
 
-use App\Friend;
-use App\FriendRequest;
 use App\User;
+use App\Friend;
 use Carbon\Carbon;
+use App\FriendRequest;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
 class FriendController extends Controller
@@ -17,7 +18,7 @@ class FriendController extends Controller
 
         $user->load('friends', 'sentRequests.receiver', 'receivedRequests.sender');
 
-        return view('teacher.friends', compact('user'));
+        return view('user.friends.index', compact('user'));
     }
 
     public function store(User $user)
@@ -29,20 +30,10 @@ class FriendController extends Controller
             return back();
         }
 
-        $data = [
-            [
-                'user_id' => $friend->id,
-                'friend_id' => $user->id,
-                'created_at' => Carbon::now(),
-            ],
-            [
-                'user_id' => $user->id,
-                'friend_id' => $friend->id,
-                'created_at' => Carbon::now(),
-            ],
-        ];
+        $user->friends()->attach($friend);
 
-        Friend::insert($data);
+        $friend->friends()->attach($user);
+
 
         FriendRequest::where([
             'sender_id' => $user->id,
@@ -61,13 +52,9 @@ class FriendController extends Controller
 
         $friend = Auth::user();
 
-        Friend::where([
-            'user_id' => $friend->id,
-            'friend_id' => $user->id,
-        ])->orWhere([
-            'user_id' => $user->id,
-            'friend_id' => $friend->id,
-        ])->delete();
+        $user->friends()->detach($friend);
+
+        $friend->friends()->detach($user);
 
         return back();
 

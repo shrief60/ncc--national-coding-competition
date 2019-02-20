@@ -1,0 +1,274 @@
+.main_round {
+    border: 0.5px solid rgb(232, 232, 232);
+    border-radius: 15px;
+    padding: 3%;
+    margin: 2%;
+
+}
+
+.round1 {
+    display: grid;
+    grid-template-columns: 70% 20%;
+    grid-gap: 10%
+}
+
+.ideaHeader {
+    font-size: 24px;
+    color: rgb(114, 114, 114);
+    letter-spacing: 0.5px;
+    font-style: normal;
+
+}
+
+.ideaDescription {
+    color: rgb(114, 114, 114);
+    font-style: normal;
+    font-size: 21px;
+}
+
+.image_round {
+    width: 105px;
+    height: 105px;
+}
+
+.op_card {
+    background-color: rgb(232, 232, 232);
+    padding: 3%;
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px;
+}
+
+.blue_section {
+    color: rgb(83, 161, 223);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.black_section {
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.image_card {
+    width: 40px;
+    height: 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+/************************************ */
+
+.main_round_selection {
+    border: 2px solid rgb(232, 232, 232);
+    border-radius: 15px;
+    padding: 3%;
+    margin: 2%;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+.header_select {}
+
+.select_idea_div {
+    width: 29%;
+    display: grid;
+    grid-template-columns: 70% 20%;
+    grid-gap: 10%;
+    margin: 2%;
+}
+
+.border_native {
+    border: 5px solid rgb(112, 111, 111);
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.border_active {
+    border: 5px solid #6bc259;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.ideaHeader_select {
+    font-size: 14px;
+    color: #000;
+    font-style: normal;
+}
+
+.ideaDescription_select {
+    color: rgb(114, 114, 114);
+    font-style: normal;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.image_round_select {
+    margin-top: 50%;
+    margin-bottom: 50%;
+    width: 105px;
+    height: 105px;
+
+}
+
+.ideas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*** bar  */
+
+.bar {
+    width: 95%;
+    height: 20px;
+    background-color: rgb(208, 208, 208);
+    text-align: center;
+    /* margin-top: 10%; */
+    /* margin-left: 50px; */
+    border-radius: 20px;
+    margin: auto;
+}
+
+.start_icon_progress {
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+}
+
+.progressbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    /* margin-top: 70px; */
+}
+
+.circle.started {
+    border: 3px solid #7259ff;
+}
+
+.circle.finished {
+    border: 3px solid #5DBF61;
+}
+
+.circle.closed {
+    border: 1px solid rgb(166, 166, 166);
+}
+
+
+.circle1 {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    left: 0px;
+    background-color: #fff;
+    border-radius: 50%;
+    left: 15%;
+}
+
+
+.circle2 {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.circle3 {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.circle_end {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2%;
+    border: 3px solid rgb(166, 166, 166);
+}
+
+.icon_lock {
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    top: 17%;
+    transform: translateX(-50%);
+    position: absolute;
+
+}
+
+.progress_round {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(166, 166, 166);
+    LETTER-SPACING: 0.5PX;
+}
+
+.progress_round_num {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(166, 166, 166);
+    LETTER-SPACING: 0.5PX;
+}
+
+.container_divs {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.nextStep {
+    background-color: #7258ff;
+    color: #ffff;
+    font-size: 20px;
+    padding: 1% 3%;
+    border: none;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+}
+
+.nextStep:hover {
+    color: #ddd;
+}
+
+.absolute_button {
+    position: absolute;
+    right: 65px;
+    bottom: -80px;
+
+}

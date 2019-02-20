@@ -1,0 +1,44 @@
+@import '../../variables';
+
+.round-date {
+    .round-time-diff {
+        border: 1px solid $grey;
+        display: flex;
+        padding: 0.5rem;
+        align-items: center;
+        width: fit-content;
+        margin-left: auto;
+        svg {
+            fill: $black;
+            width: 32px;
+            height: 32px;
+            margin-right: 0.5rem;
+        }
+        color: $grey;
+    }
+
+    .round-due-date {
+        width: fit-content;
+        margin: 0.5rem auto;
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        background: $alert-danger;
+        border-radius: 0.5rem;
+        .text {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            margin: 0;
+            color: $dark-grey;
+        }
+        .icon {
+            background: $white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: 1px solid $grey;
+            text-align: center;
+        }
+    }
+}

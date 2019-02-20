@@ -1,0 +1,47 @@
+.container_div {
+    margin-left: 20px;
+    color: #fff;
+}
+
+.cat_input {
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+}
+
+.cat_input:focus {
+    outline: none;
+}
+
+
+.header {
+    color: rgb(244, 180, 0);
+    text-align: center ;
+}
+.cat-form{
+ margin-left : 20%;
+ margin-top : 20px;
+}
+.cat_title{
+    font-size : 16px;
+    font-weight: bold ;
+}
+.an_style {
+    background-color : rgb(244,180,0 );
+    border : none ;
+    outline: none ;
+    padding : 2% ;
+    color :#fff ;
+    font-weight : bold ;
+    letter-spacing : 1px ;
+
+}
+.an_style:focus {
+
+
+  outline : none ;
+}

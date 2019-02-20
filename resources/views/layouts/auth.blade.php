@@ -15,6 +15,7 @@
     <title> {{ config('app.name') }} </title>
 
     {!! css('app') !!}
+
     {!! css('auth/auth') !!}
 
     @stack('css')
@@ -45,14 +46,14 @@
             <div class="content">
                 <div class="left">
                     <div class="toggler">
-                        @if(Route::currentRouteName() == 'learner.login')
+                        @if(Route::currentRouteName() == 'login')
                         <span> @lang('auth.sign_in') </span>
                         <a href="{{ url('register') }}"> @lang('auth.register') </a>
-                        @elseif(Route::currentRouteName() == 'admin.login')
+                        @elseif(Route::currentRouteName() == 'judge.login')
                         <span> @lang('auth.sign_in') </span>
-                        <a href="{{ url('admin/register') }}"> @lang('auth.register') </a>
-                        @elseif(Route::currentRouteName() == 'learner.register')
-                        <a href="{{ url('login') }}"> @lang('auth.sign_in') </a>
+                        <a href="{{ url('judge/register') }}"> @lang('auth.register') </a>
+                        @elseif(Route::currentRouteName() == 'judge.register')
+                        <a href="{{ url('judge/login') }}"> @lang('auth.sign_in') </a>
                         <span> @lang('auth.register') </span>
                         @elseif(Route::currentRouteName() == 'admin.register')
                         <a href="{{ url('admin/login') }}"> @lang('auth.sign_in') </a>
@@ -68,11 +69,11 @@
                     <div class="lang-switcher">
                         <img src="{{ icon('earth-globe', 'svg') }}" class="svg">
                         @rtl
-                        <a href="{{ route('lang.switch', 'en') }}">
+                        <a href="{{ route('locale.switch', 'en') }}">
                             <span> English </span>
                         </a>
                         @else
-                        <a href="{{ route('lang.switch', 'ar') }}">
+                        <a href="{{ route('locale.switch', 'ar') }}">
                             <span> عربى </span>
                         </a>
                         @endrtl

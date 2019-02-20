@@ -68,3 +68,23 @@ if(!function_exists('isJson'))
         return (json_last_error() == JSON_ERROR_NONE);
     }
 }
+
+if(!function_exists('detect_type'))
+{
+    /**
+     * Detect the type of uploaded file from its mimetype
+     *
+     * @param [string] $mimeType
+     * @return string
+     */
+    function detect_type($mimeType)
+    {
+
+        if(str_contains($mimeType, 'image')) {
+            return 'image';
+        } elseif(str_contains($mimeType, 'video')) {
+            return 'video';
+        }
+        return 'file';
+    }
+}
