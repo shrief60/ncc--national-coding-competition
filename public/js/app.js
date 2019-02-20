@@ -245,7 +245,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 			// Using offsetHeight as a replacement for computed.height in IE, because IE does not account use of border-box
 			var actualHeight = computed.boxSizing === 'content-box' ? Math.round(parseFloat(computed.height)) : ta.offsetHeight;
 
-			// The actual height not matching the style height (set via the resize method) indicates that 
+			// The actual height not matching the style height (set via the resize method) indicates that
 			// the max-height has been exceeded, in which case the overflow should be allowed.
 			if (actualHeight < styleHeight) {
 				if (computed.overflowY === 'hidden') {
@@ -19092,7 +19092,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
    * Safe way of detecting whether or not the given thing is a primitive and
    * whether it has the given property
    */
-  function primitiveHasOwnProperty (primitive, propName) {  
+  function primitiveHasOwnProperty (primitive, propName) {
     return (
       primitive != null
       && typeof primitive !== 'object'
@@ -19461,7 +19461,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
           while (intermediateValue != null && index < names.length) {
             if (index === names.length - 1)
               lookupHit = (
-                hasProperty(intermediateValue, names[index]) 
+                hasProperty(intermediateValue, names[index])
                 || primitiveHasOwnProperty(intermediateValue, names[index])
               );
 
@@ -22977,7 +22977,7 @@ function addStyle (obj, options) {
 	// If a transform function was defined, run it on the css
 	if (options.transform && obj.css) {
 	    result = typeof options.transform === 'function'
-		 ? options.transform(obj.css) 
+		 ? options.transform(obj.css)
 		 : options.transform.default(obj.css);
 
 	    if (result) {

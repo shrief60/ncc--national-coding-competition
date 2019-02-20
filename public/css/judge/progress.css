@@ -1,12 +1,9 @@
 .progess {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.progress_body {
-    margin-left: 20px;
-    padding: 20px;
-}
+.progress_body {}
 
 .progress_header {
     background-color: #1bcae6;
@@ -32,13 +29,140 @@
 }
 
 .orange:hover {
-    color : #aaa;
+    color: #aaa;
 }
 
 .c-width {
     width: 100%;
 }
-.element{
-    display: grid ;
-    grid-template-columns: 1fr 1fr ;
+
+.element {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*=============================================================*/
+
+.progress_table_header {
+    display: grid;
+    grid-template-columns: 29% 12% 12% 19% 12% 10%;
+    grid-gap: 1%;
+    border: 0.5px solid #000;
+    padding: 1%;
+
+}
+
+.progress_table_body {
+
+    display: grid;
+    grid-template-columns: 29% 43% 12% 10%;
+    grid-gap: 1%;
+    border: 0.5px solid #000;
+    padding: 10px;
+    align-items: center;
+
+}
+
+
+.progress_table_body_operations {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 1%;
+    border: 0.5px solid #000;
+    margin: 5px;
+    justify-items: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.progress_table_body_operations p {
+    margin: 0;
+}
+
+.head_element {
+    color: #000;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+
+.body_element {
+
+    text-align: center;
+    font-size: 14px;
+}
+
+.body_element_date {
+
+    font-size: 12px;
+}
+
+.body_element_name {
+
+    font-size: 14px;
+    justify-self: start;
+}
+
+.white_c {
+    color: #4e4b4b;
+    font-weight: bold;
+}
+
+.black_c {
+    color: #000;
+
+}
+
+.textBold {
+    font-weight: bold;
+}
+
+.show_btn {
+    background-color: #7259ff;
+    margin: 3px;
+    border-radius: 2rem;
+    padding: 0px 0px;
+    color: #fff;
+    font-size: 01.2em;
+    min-width: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 40px;
+    height: 40px;
+}
+
+.padding5 {
+    padding-top: 10px;
+}
+
+.userData {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-gap: 3%;
+    justify-items: center;
+    align-items: center;
+}
+
+.profileimage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.arrow_down {
+    width: 13px;
+    height: 13px;
+    margin-left:5px;
+    margin-top : 3px;
+    transform:  rotate(-90deg ) ;
+}
+.FinishedBtn{
+      width: 13px;
+      height: 13px;
+      margin-left:5px;
+
 }

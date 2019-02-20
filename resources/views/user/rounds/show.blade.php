@@ -11,7 +11,8 @@
                         <p class="ideaDescription_select"> {{ $idea->description }} </p>
                     </div>
                     <div class="round_right">
-                        <img class="image_round_select selected {{ $idea->isSelected() ? 'shown' : 'hidden' }}" src="{{ asset('svg/rightcheck.svg') }}" alt="">
+                        <img class="image_round_select selected {{ $idea->isSelected() ? 'shown' : 'hidden' }}"
+                        src="{{ asset('svg/rightcheck.svg') }}" alt="">
                         <img class="image_round_select not-selected {{ !$idea->isSelected() ? 'shown' : 'hidden' }}" src="{{ asset('svg/verified.svg') }}" alt="">
                     </div>
                 </div>

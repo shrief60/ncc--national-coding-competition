@@ -25,7 +25,10 @@ class ProgressController extends Controller
         });
 
 
-        return view('judge.submissions.index', compact('rounds', 'submissions'));
+       //return $users;
+
+
+        return view('judge.submissions.index', compact('users'));
     }
    /* public function winner (Request $request ){
         $validator = validator::make($request->all(), [
@@ -38,6 +41,14 @@ class ProgressController extends Controller
     }*/
     public function show(Progress $sub)
     {
+
+        $sub->load(['user.rounds.ideas', 'user.rounds.attachments' => function($query) use($sub) {
+            return $query->userAttachments($sub->user_id);
+        }]);
+
+
+       // return $sub;
+
         return view('judge.submissions.submission', compact('sub'));
     }
 
