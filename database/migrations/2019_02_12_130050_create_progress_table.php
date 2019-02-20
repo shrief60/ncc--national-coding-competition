@@ -25,6 +25,7 @@ class CreateProgressTable extends Migration
             $table->boolean('published')->default(false);
             $table->text('submission')->nullable();
             $table->boolean('finished')->default(false);
+            $table->boolean('winner')->default(false);
             $table->timestamps();
         });
     }

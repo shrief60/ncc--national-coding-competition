@@ -3,6 +3,7 @@
 
 @push ('css')
     {!! css('judge/progress') !!}
+     {!! css('judge/create') !!}
 @endpush
 
 @section('content')
@@ -32,8 +33,6 @@
             <p> Submission :</p>
              <button type="button" class="btn btn-primary" style = "width : 50%;"> Show </button>
         </div>
-
-
     </div>
     <center style = "margin-top:10%;">
          <button type="button" class="btn btn-primary" style = "width : 50%;"> Select As Winner  </button>
@@ -41,9 +40,6 @@
 </div>
 @stop
 
-@push ('css')
-    {!! css('judge/create') !!}
-@endpush
 
 <script>
     $(".selector").flatpickr(optional_config);

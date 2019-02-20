@@ -13,8 +13,21 @@ class IdeasTableSeeder extends Seeder
      */
     public function run()
     {
-        Round::all()->each(function($round) {
-            $round->ideas()->saveMany(factory(Idea::class, 5)->make());
+
+        $ideas = [
+            'Create an application to show how different creatures eat different food in a food chain',
+            'Create an app to simulate a journey through a hazardous environment',
+            'Create a modal solar or planetary system',
+            'Create a model traffic system with a range of vehicles',
+            'Create a simulated habitat and the creatures which live there'
+        ];
+        Round::all()->each(function ($round) use ($ideas) {
+
+            foreach ($ideas as $idea) {
+                $round->ideas()->save(factory(Idea::class )->make([
+                    'description' => $idea
+                ]));
+            }
         });
     }
 }

@@ -2,7 +2,7 @@
 
 @section('layout')
 
-    @include('user.partials.sidebar')
+    @include('judge.partials.sidebar')
     @yield('content')
 
 @endsection

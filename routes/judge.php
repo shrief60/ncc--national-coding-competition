@@ -12,5 +12,7 @@
     Route::get('/progress/index', 'ProgressController@index');
 
     Route::get('/progress/show/{sub}', 'ProgressController@show');
+    Route::get('/dashboard', 'DashboardController@index');
+
 
     //Route::post('/rounds/edit/{round}', 'RoundController@update')->name('rounds.edit');

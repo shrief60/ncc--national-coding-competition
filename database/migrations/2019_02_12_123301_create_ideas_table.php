@@ -15,7 +15,6 @@ class CreateIdeasTable extends Migration
     {
         Schema::create('ideas', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
             $table->text('description');
             $table->integer('round_id')->unsigned();
             $table->foreign('round_id')->references('id')->on('rounds')->onDelete('cascade');

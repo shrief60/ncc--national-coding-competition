@@ -20,6 +20,7 @@ class CreateAttachmentsTable extends Migration
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->string('path');
             $table->string('type');
+            $table->string('name')->nullable();
             $table->timestamps();
         });
     }
